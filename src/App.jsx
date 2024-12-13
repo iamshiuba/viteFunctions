@@ -10,6 +10,8 @@ import B1tton from "./B1tton.jsx";
 import ProfilePicture from "./profilePicture.jsx";
 import MyComponent from "./MyComponent.jsx";
 import Counter from "./Counter.jsx";
+import MiComponent from "./MiComponent.jsx";
+import ColorPicker from "./ColorPicker.jsx";
 
 function App() {
   const fruits = [{id: 1, name:"apple", calories: 95}, 
@@ -32,9 +34,11 @@ function App() {
       <Card />
       <Card />
       <Counter />
+      <ColorPicker />
       <Food />
       {fruits.length > 0 && <List items={fruits} category="Fruits"/>}
       {vegetables.length > 0 && <List items={vegetables} category="Vegetables"/>}
+      <MiComponent />
       <MyComponent />
       <ProfilePicture />
       <Student name="Spongebob" age={30} isStudent={true} />
