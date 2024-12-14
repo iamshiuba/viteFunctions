@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function MyComponent () {
+function EmploymentStatus () {
     const [name, setName] = useState("Guest");
     const[age, setAge] = useState(0);
     const [isEmployed, setIsEmployed] = useState(false);
@@ -28,4 +28,4 @@ function MyComponent () {
     )
 }
 
-export default MyComponent;
+export default EmploymentStatus;

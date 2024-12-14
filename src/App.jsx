@@ -6,12 +6,15 @@ import Button from "./Button.jsx";
 import Student from "./Students.jsx";
 import UserGreeting from "./UserGreeting.jsx";
 import List from "./List.jsx";
+import EmploymentStatus from "./EmploymentStatus.jsx";
+import Delivery from "./Delivery.jsx";
 import B1tton from "./B1tton.jsx";
 import ProfilePicture from "./profilePicture.jsx";
-import MyComponent from "./MyComponent.jsx";
 import Counter from "./Counter.jsx";
-import MiComponent from "./MiComponent.jsx";
 import ColorPicker from "./ColorPicker.jsx";
+import UpdaterFunctionCounter from "./UpdaterFunctionCounter.jsx";
+import Car from "./Car.jsx";
+import ArrayFoods from "./ArrayFoods.jsx";
 
 function App() {
   const fruits = [{id: 1, name:"apple", calories: 95}, 
@@ -29,23 +32,26 @@ function App() {
   return (
     <>
       <Header />
+      <ArrayFoods />
       <Button />
       <B1tton />
       <Card />
       <Card />
+      <Car />
       <Counter />
       <ColorPicker />
+      <Delivery />
+      <EmploymentStatus />
       <Food />
       {fruits.length > 0 && <List items={fruits} category="Fruits"/>}
       {vegetables.length > 0 && <List items={vegetables} category="Vegetables"/>}
-      <MiComponent />
-      <MyComponent />
       <ProfilePicture />
       <Student name="Spongebob" age={30} isStudent={true} />
       <Student name="Patrick" age={42} isStudent={false} />
       <Student name="Squiddward" age={50} isStudent={false} />
       <Student name="Sandy" age={27} isStudent={true} />
       <Student />
+      <UpdaterFunctionCounter />
       <UserGreeting isLoggedIn={true} username="IamSHIUBA" />
       <Footer />
     </>

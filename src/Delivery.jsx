@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function MiComponent() {
+function Delivery() {
 
     const [name, setName] = useState("Guest");
     const [quantity, setQuantity] = useState(1);
@@ -60,4 +60,4 @@ function MiComponent() {
     )
 }
 
-export default MiComponent;
+export default Delivery;
