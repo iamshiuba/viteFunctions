@@ -17,4 +17,4 @@ UserGreeting.defaultProps = {
     username: "Guest",  
 }
 
-export default UserGreeting
+export default UserGreeting;

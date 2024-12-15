@@ -29,4 +29,4 @@ function UpdaterFunctionCounter(){
     );
 }
 
-export default UpdaterFunctionCounter
+export default UpdaterFunctionCounter;

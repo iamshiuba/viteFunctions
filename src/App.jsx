@@ -8,13 +8,15 @@ import UserGreeting from "./UserGreeting.jsx";
 import List from "./List.jsx";
 import EmploymentStatus from "./EmploymentStatus.jsx";
 import Delivery from "./Delivery.jsx";
-import B1tton from "./B1tton.jsx";
+import HandleClickButton from "./HandleClickButton.jsx";
 import ProfilePicture from "./profilePicture.jsx";
 import Counter from "./Counter.jsx";
 import ColorPicker from "./ColorPicker.jsx";
 import UpdaterFunctionCounter from "./UpdaterFunctionCounter.jsx";
 import Car from "./Car.jsx";
 import ArrayFoods from "./ArrayFoods.jsx";
+import Cars from "./Cars.jsx";
+import ToDoList from "./ToDoList.jsx";
 
 function App() {
   const fruits = [{id: 1, name:"apple", calories: 95}, 
@@ -34,15 +36,16 @@ function App() {
       <Header />
       <ArrayFoods />
       <Button />
-      <B1tton />
       <Card />
       <Card />
       <Car />
+      <Cars />
       <Counter />
       <ColorPicker />
       <Delivery />
       <EmploymentStatus />
       <Food />
+      <HandleClickButton />
       {fruits.length > 0 && <List items={fruits} category="Fruits"/>}
       {vegetables.length > 0 && <List items={vegetables} category="Vegetables"/>}
       <ProfilePicture />
@@ -51,6 +54,7 @@ function App() {
       <Student name="Squiddward" age={50} isStudent={false} />
       <Student name="Sandy" age={27} isStudent={true} />
       <Student />
+      <ToDoList />
       <UpdaterFunctionCounter />
       <UserGreeting isLoggedIn={true} username="IamSHIUBA" />
       <Footer />

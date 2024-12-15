@@ -1,4 +1,4 @@
-function B1tton() {
+function HandleClickButton() {
 
     const handleClick = (e) => e.target.textContent = "OUCH! 😖"; // e = event
     
@@ -7,4 +7,4 @@ function B1tton() {
     )
 }
 
-export default B1tton
+export default HandleClickButton;
