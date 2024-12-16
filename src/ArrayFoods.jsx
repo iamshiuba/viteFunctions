@@ -24,7 +24,7 @@ function ArrayFoods() {
           </li>
         ))}
       </ul>
-      <input type="text" id="foodInput" placeholder='"Enter food name' />
+      <input type="text" id="foodInput" placeholder="Enter food name" />
       <button onClick={handleAddFood}>Add Food</button>
     </div>
   );

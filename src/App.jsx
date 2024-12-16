@@ -9,7 +9,7 @@ import List from "./List.jsx";
 import EmploymentStatus from "./EmploymentStatus.jsx";
 import Delivery from "./Delivery.jsx";
 import HandleClickButton from "./HandleClickButton.jsx";
-import ProfilePicture from "./profilePicture.jsx";
+import ProfilePicture from "./ProfilePicture.jsx";
 import Counter from "./Counter.jsx";
 import ColorPicker from "./ColorPicker.jsx";
 import UpdaterFunctionCounter from "./UpdaterFunctionCounter.jsx";
@@ -17,6 +17,12 @@ import Car from "./Car.jsx";
 import ArrayFoods from "./ArrayFoods.jsx";
 import Cars from "./Cars.jsx";
 import ToDoList from "./ToDoList.jsx";
+import ChangeColor from "./ChangeColor.jsx";
+import HandleResize from "./HandleResize.jsx";
+import DigitalClock from "./DigitalClock.jsx";
+import ComponentA from "./ComponentA.jsx"
+import HandleClick from "./HandleClick.jsx";
+import StopWatch from "./StopWatch.jsx";
 
 function App() {
   const fruits = [{id: 1, name:"apple", calories: 95}, 
@@ -42,9 +48,14 @@ function App() {
       <Cars />
       <Counter />
       <ColorPicker />
+      <ComponentA />
+      <ChangeColor />
+      <DigitalClock />
+      <HandleResize />
       <Delivery />
       <EmploymentStatus />
       <Food />
+      <HandleClick />
       <HandleClickButton />
       {fruits.length > 0 && <List items={fruits} category="Fruits"/>}
       {vegetables.length > 0 && <List items={vegetables} category="Vegetables"/>}
@@ -57,6 +68,7 @@ function App() {
       <ToDoList />
       <UpdaterFunctionCounter />
       <UserGreeting isLoggedIn={true} username="IamSHIUBA" />
+      <StopWatch />
       <Footer />
     </>
   );
